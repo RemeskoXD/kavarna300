@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Šálek zábavy: Kavárna & Herní doupě</title>
+    <meta name="description" content="Dvojí zážitek v jedné aplikaci: Útulná výběrová kavárna a epické herní doupě v srdci Bruntálu." />
+    <meta property="og:title" content="Šálek zábavy: Kavárna & Herní doupě" />
+    <meta property="og:description" content="Dvojí zážitek v jedné aplikaci: Útulná výběrová kavárna a epické herní doupě v srdci Bruntálu." />
+    <link rel="icon" type="image/webp" href="/assets/aistudio/Logo_verze_3_1-Picsart-BackgroundRemover_bd276156.webp" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+      window.tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              sans: ['"Montserrat"', 'sans-serif'],
+              display: ['"Playfair Display"', 'serif'],
+            },
+            colors: {
+              guild: {
+                bg: '#f9f7f5',
+                paper: '#ffffff',
+                gold: '#a68a56',
+                accent: '#a68a56',
+                dark: '#1c1917',
+                muted: '#9ca3af',
+              },
+              gaming: {
+                bg: '#121212',
+                card: '#1e1e1e',
+                text: '#e5e5e5',
+                accent: '#d4af37',
+                wood: '#2d2d2d',
+              },
+              cafe: {
+                accent: '#a68a56',
+              }
+            },
+            boxShadow: {
+              'card': '0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03)',
+              'glow': '0 0 15px rgba(166, 138, 86, 0.3)',
+              'elegant': '0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 10px 10px -5px rgba(0, 0, 0, 0.01)',
+            },
+            animation: {
+              'fade-in': 'fadeIn 0.5s ease-out',
+            },
+            keyframes: {
+              fadeIn: {
+                '0%': { opacity: '0', transform: 'translateY(10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Skrytí scrollbaru pro čistý rozcestník */
+      .scrollbar-hide::-webkit-scrollbar { display: none; }
+      .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+      body { margin: 0; padding: 0; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@19.0.0",
+    "react-dom": "https://esm.sh/react-dom@19.0.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.0.0/client",
+    "lucide-react": "https://esm.sh/lucide-react@0.463.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2",
+    "vite": "https://esm.sh/vite@^7.3.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-[#f9f7f5] text-[#1c1917] antialiased selection:bg-[#a68a56] selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="index.tsx"></script>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
